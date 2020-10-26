@@ -14,7 +14,7 @@ Sin_O2 = 0.3; %g/L  atmospheric oxygen
 
 S_O2 = 0; %effluent of substrate
 
-r_O2 = 0.11; %mol gDW^-1 h^-1 SOURCE: https://www.researchgate.net/publication/257309421_Comparing_cellular_performance_of_Yarrowia_lipolytica_during_growth_on_glucose_and_glycerol_in_submerged_cultivations 
+r_O2 = 0.11; %mol gDW^-1 h^-1 SOURCE: Workman, Mhairi & Holt, Philippe & Thykaer, Jette. (2013). Comparing cellular performance of Yarrowia lipolytica during growth on glucose and glycerol in submerged cultivations. AMB Express. 3. 58. 10.1186/2191-0855-3-58.      
 
 Y_XO2 = (r_O2 * 32)^(-1); %yield coefficient of grams of cell mass to oxygen mass
 
@@ -43,7 +43,8 @@ xlim([0 24])
 
 
 %calculating the total amount of betacarotene production over 24 hours 
-Y_XBC = (0.020)^-1; % yield coefficient of biomass to betacarotene (gDW/gBC) SOURCE: https://www.frontiersin.org/articles/10.3389/fbioe.2020.00029/full#F2 
+Y_XBC = (0.020)^-1; % yield coefficient of biomass to betacarotene (gDW/gBC) SOURCE: TITLE=Recombinant β-Carotene Production by Yarrowia lipolytica – Assessing the Potential of Micro-Scale Fermentation Analysis in Cell Factory Design and Bioreaction Optimization  JOURNAL=Frontiers in Bioengineering and Biotechnology   URL=https://www.frontiersin.org/article/10.3389/fbioe.2020.00029 DOI=10.3389/fbioe.2020.00029    
+
 
 %plotting beta carotene production
 figure
@@ -64,7 +65,7 @@ xlabel('hours')
 ylabel('gDW/L')
 
 %plotting the rate of change of glucose at any moment in time (dG/dt)
-Y_XG = 0.262; %gDW over grams of glucose - SOURCE: https://www.frontiersin.org/articles/10.3389/fbioe.2020.00029/full#F2
+Y_XG = 0.262; %gDW over grams of glucose - SOURCE: TITLE=Recombinant β-Carotene Production by Yarrowia lipolytica – Assessing the Potential of Micro-Scale Fermentation Analysis in Cell Factory Design and Bioreaction Optimization  JOURNAL=Frontiers in Bioengineering and Biotechnology   URL=https://www.frontiersin.org/article/10.3389/fbioe.2020.00029 DOI=10.3389/fbioe.2020.00029    
 dG = -1;
 
 figure
