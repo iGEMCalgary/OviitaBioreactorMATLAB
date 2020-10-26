@@ -93,9 +93,6 @@ disp(amount_of_BC)
 
 
 
-%graph the amount of beta carotene produced
-%BC_Curve 
-
 
 
 
